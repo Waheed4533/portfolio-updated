@@ -15,7 +15,7 @@ projects: Project[];
 experience: Experience[];
 socials: Social[]
 }
-export default function Home({pageinfo,skills,projects,experience,socials}:maintype) {
+const Home: React.FC<maintype> = ({pageinfo,skills,technologies,projects,experience,socials})=> {
   return (
     <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thumb-rounded-400 ">
   
@@ -52,3 +52,4 @@ export default function Home({pageinfo,skills,projects,experience,socials}:maint
 
   );
 }
+export default Home;
