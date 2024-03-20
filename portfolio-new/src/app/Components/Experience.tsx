@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Experiencecard from '../libs/Experiencecard'
 import {client} from '../../../sanity/lib/client'
 import { Experience } from '../../../typings'
-type Props = {
+type exptype = {
   experience:Experience[]
 }
 export async function getExperience() { 
@@ -15,7 +15,7 @@ export async function getExperience() {
   }`);
     return Exp;
   }
-export default async function Experiencee({experience}: Props) {
+export default async function Experiencee({experience}: exptype) {
   const getexp = await getExperience()
   return ( 
     <motion.div  key='unique-key' 

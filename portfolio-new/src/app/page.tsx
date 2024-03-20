@@ -7,7 +7,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Link from "next/link";
 import { PageInfo, skill, Technology, Project, Experience, Social } from "../../typings";
-type Props = {
+type maintype = {
 pageinfo: PageInfo;
 skills: skill[];
 technologies: Technology[];
@@ -15,16 +15,16 @@ projects: Project[];
 experience: Experience[];
 socials: Social[]
 }
-export default function Home({pageinfo,skills,projects,experience,socials}:Props) {
+export default function Home({pageinfo,skills,projects,experience,socials}:maintype) {
   return (
     <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thumb-rounded-400 ">
   
-      <Header/>
+      <Header header={socials}/>
       <section id="hero" className="snap-start" >
-      <Hero/>
+      <Hero hero={pageinfo}/>
       </section>
       <section id="about" className="snap-center"> 
-        <About/>
+        <About about={pageinfo}/>
       </section>
       <section id="experience" className="snap-center">
         <Experiencee experience={experience}/>
@@ -33,7 +33,7 @@ export default function Home({pageinfo,skills,projects,experience,socials}:Props
         <Skills skills={skills}/>
       </section>
       <section id="projects" className="snap-start">
-        <Projects />
+        <Projects project={projects}/>
       </section>
       <section id="contact" className="snap-start">
         <Contact/>

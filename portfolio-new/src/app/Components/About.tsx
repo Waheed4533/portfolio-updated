@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { client } from '../../../sanity/lib/client'
 import { urlForImage } from '../../../sanity/lib/image'
+import { PageInfo } from "../../../typings"
+
 export async function pageinfo() { 
   const z = await client.fetch(`*[_type == 'pageinfo']{
     backgroundInformation,
@@ -12,9 +14,11 @@ export async function pageinfo() {
     return z;
   }
 
-type Props = {}
+type abouttype = {
+  about:PageInfo
+}
 
-export default async function About({}: Props) {
+export default async function About({about}: abouttype) {
   
   const get = await pageinfo();
       

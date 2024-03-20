@@ -3,14 +3,16 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import { client } from '../../../sanity/lib/client'
-
+import { Social } from '../../../typings'
 export async function getSocial() { 
     const x = await client.fetch('*[_type == "social"]');
       return x;
     }
-type Props = {}
+type headertype = {
+    header:Social[]
+}
 
-export default async function Header({}: Props) {
+export default async function Header({header}: headertype) {
 const res = await getSocial()
 
   return (

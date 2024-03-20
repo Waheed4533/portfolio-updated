@@ -15,11 +15,11 @@ async function getherodata() {
 `);
     return hero;
   }
-type Props = {
-
+type herotype = {
+  hero: PageInfo
 }
 
-export default async function Hero({}: Props) {
+export default async function Hero({hero}: herotype) {
   const data = await getherodata();
   return (
     <div className="h-screen flex flex-col space-y-3 items-center justify-center overflow-hidden text-center">
