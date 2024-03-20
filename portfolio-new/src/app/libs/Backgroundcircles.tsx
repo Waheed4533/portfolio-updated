@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
-type Props = {}
 
-function Backgroundcircles({}: Props) {
+
+function Backgroundcircles() {
   return (
     <motion.div initial={
         {opacity: 0}
