@@ -6,7 +6,7 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Link from "next/link";
-import { PageInfo, skill, Technology, Project, Experience, Social } from "../../typings";
+import { PageInfo, skill, Project, Experience, Social } from "../../typings";
 type maintype = {
 pageinfo: PageInfo;
 skills: skill[];
