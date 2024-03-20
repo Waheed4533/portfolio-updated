@@ -1,9 +1,9 @@
-import Header, { getSocial } from "./Components/Header";
+import Header from "./Components/Header";
 import Hero from "./Components/Hero";
-import About, { pageinfo } from "./Components/About";
-import Experiencee, { getExperience } from "./Components/Experience";
-import Skills, { getskills } from "./Components/Skills";
-import Projects, { getprojects } from "./Components/Projects";
+import About from "./Components/About";
+import Experiencee from "./Components/Experience";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Link from "next/link";
 import { PageInfo, skill, Technology, Project, Experience, Social } from "../../typings";
@@ -33,7 +33,7 @@ export default function Home({pageinfo,skills,projects,experience,socials}:Props
         <Skills skills={skills}/>
       </section>
       <section id="projects" className="snap-start">
-        <Projects/>
+        <Projects />
       </section>
       <section id="contact" className="snap-start">
         <Contact/>
