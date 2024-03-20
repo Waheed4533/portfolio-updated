@@ -18,7 +18,7 @@ type abouttype = {
   about:PageInfo
 }
 
-export default async function About({about}: abouttype) {
+export  async function About({about}: abouttype) {
   
   const get = await pageinfo();
       

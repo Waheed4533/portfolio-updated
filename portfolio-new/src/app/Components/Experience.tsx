@@ -15,7 +15,7 @@ export async function getExperience() {
   }`);
     return Exp;
   }
-export default async function Experiencee({experience}: exptype) {
+export  async function Experiencee({experience}: exptype) {
   const getexp = await getExperience()
   return ( 
     <motion.div  key='unique-key' 

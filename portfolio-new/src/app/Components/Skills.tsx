@@ -15,7 +15,7 @@ export async function getskills() {
   }`);
     return skill;
   }
-export default async function Skills({skills}: Props) {
+export  async function Skills({skills}: Props) {
   const getdata = await getskills()
   return (
     <motion.div 

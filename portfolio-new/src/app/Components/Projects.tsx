@@ -18,7 +18,7 @@ type projecttype = {
   project: Project[]
 }
 
-export default async function Projects({project}: projecttype) {
+export  async function Projects({project}: projecttype) {
 const projects = await getprojects()
   return (
     <motion.div

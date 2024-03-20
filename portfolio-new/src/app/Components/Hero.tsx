@@ -19,7 +19,7 @@ type herotype = {
   hero: PageInfo
 }
 
-export default async function Hero({hero}: herotype) {
+export  async function Hero({hero}: herotype) {
   const data = await getherodata();
   return (
     <div className="h-screen flex flex-col space-y-3 items-center justify-center overflow-hidden text-center">

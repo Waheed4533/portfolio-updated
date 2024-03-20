@@ -12,7 +12,7 @@ type headertype = {
     header:Social[]
 }
 
-export default async function Header({header}: headertype) {
+export async function Header({header}: headertype) {
 const res = await getSocial()
 
   return (

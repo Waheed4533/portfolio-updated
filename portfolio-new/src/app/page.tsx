@@ -1,10 +1,10 @@
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Experiencee from "./Components/Experience";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+import {Header} from "./Components/Header";
+import {Hero} from "./Components/Hero";
+import {About} from "./Components/About";
+import {Experiencee} from "./Components/Experience";
+import {Skills} from "./Components/Skills";
+import {Projects} from "./Components/Projects";
+import {Contact} from "./Components/Contact";
 import Link from "next/link";
 import { PageInfo, skill, Project, Experience, Social } from "../../typings";
 type maintype = {
