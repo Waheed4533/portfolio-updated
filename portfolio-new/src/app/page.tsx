@@ -10,12 +10,11 @@ import { PageInfo, skill, Technology, Project, Experience, Social } from "../../
 type maintype = {
 pageinfo: PageInfo;
 skills: skill[];
-technologies: Technology[];
 projects: Project[];
 experience: Experience[];
 socials: Social[]
 }
-const Home: React.FC<maintype> = ({pageinfo,skills,technologies,projects,experience,socials})=> {
+ const Home: React.FC<maintype> = ({pageinfo,skills,projects,experience,socials})=> {
   return (
     <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thumb-rounded-400 ">
   

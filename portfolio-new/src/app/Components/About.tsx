@@ -6,7 +6,7 @@ import { client } from '../../../sanity/lib/client'
 import { urlForImage } from '../../../sanity/lib/image'
 import { PageInfo } from "../../../typings"
 
-export async function pageinfo() { 
+async function pageinfo() { 
   const z = await client.fetch(`*[_type == 'pageinfo']{
     backgroundInformation,
     "imageUrl": profilePic.asset->url
