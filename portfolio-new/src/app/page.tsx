@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header, { getSocial } from "./Components/Header";
 import Hero from "./Components/Hero";
 import About, { pageinfo } from "./Components/About";
@@ -8,7 +7,6 @@ import Projects, { getprojects } from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Link from "next/link";
 import { PageInfo, skill, Technology, Project, Experience, Social } from "../../typings";
-import { Head } from "next/document";
 type Props = {
 pageinfo: PageInfo;
 skills: skill[];
