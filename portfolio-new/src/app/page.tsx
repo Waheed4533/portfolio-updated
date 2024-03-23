@@ -42,7 +42,7 @@ socials: Social[]
 <footer className="sticky bottom-3 w-full cursor-pointer">
  <div className="flex justify-center items-center ">
  <img  className="w-10 h-10 rounded-full filter hover:grayscale-0 grayscale"
- src="/FB_IMG_1677007995185 (1).jpg" alt="waheed" />
+ src="./FB_IMG_1677007995185 (1).jpg" alt="waheed" />
  </div>
 </footer>
       </Link>   
