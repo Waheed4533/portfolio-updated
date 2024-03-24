@@ -4,15 +4,16 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import { client } from '../../../sanity/lib/client'
 import { Social } from '../../../typings'
+import { fetchsocial } from '../../../utils/fetchsocial'
 export async function getSocial() { 
     const x = await client.fetch('*[_type == "social"]');
       return x;
     }
 type headertype = {
-    header:Social[]
+    socials:Social[]
 }
 
-export async function Header({header}: headertype) {
+export async function Header({socials}: headertype) {
 const res = await getSocial()
 
   return (
@@ -32,7 +33,7 @@ const res = await getSocial()
             duration: 1.5,
         }}
         >
-{res.map ((res: any) => (
+{res.map ((res:any) => (
     <SocialIcon key={res._id} url={res.url} bgColor='transparent'/>
 ))}     
     </motion.div>

@@ -13,10 +13,14 @@ export interface skill extends sanitybody {
 }
 export interface PageInfo extends sanitybody {
     _type: "pageInfo";
+    address: string;
     role: string;
     heroImage: Image;
     name: string;
     backgroundInformation: string;
+    profilePic: Image;
+    email: string;
+    phoneNumber: string
 }
 export interface Technology extends sanitybody {
     _type: "skill";
