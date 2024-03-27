@@ -2,7 +2,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from '../libs/Skill'
-import { skill } from '../../../typings'
 import { client } from '../../../sanity/lib/client'
 
 export async function getskills() { 

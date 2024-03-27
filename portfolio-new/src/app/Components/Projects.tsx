@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { client } from '../../../sanity/lib/client'
 import { urlForImage } from '../../../sanity/lib/image'
-import { Project } from '../../../typings'
+
 export async function getprojects() { 
   const z = await client.fetch(`*[_type == 'project']{
     summary,

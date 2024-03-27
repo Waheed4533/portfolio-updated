@@ -1,7 +1,6 @@
 'use client'
 // import Backgroundcircles from "../libs/Backgroundcircles"
 import Typewriter from "../libs/Typewriter"
-import Image from "next/image"
 import Link from "next/link"
 import { client } from "../../../sanity/lib/client"
 import { motion } from 'framer-motion'
@@ -44,8 +43,8 @@ export  async function Hero() {
         key={get.id} 
         src={get.imageUrl} 
         alt="Profile" 
-        width={100} 
-        height={100} 
+        width={150} 
+        height={150} 
         className="relative rounded-full mx-auto object-cover" 
     />
 ))}

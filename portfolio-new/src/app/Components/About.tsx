@@ -1,10 +1,8 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { client } from '../../../sanity/lib/client'
-import { urlForImage } from '../../../sanity/lib/image'
-import { PageInfo } from "../../../typings"
+
 
 async function pageinfo() { 
   const z = await client.fetch(`*[_type == 'pageinfo']{

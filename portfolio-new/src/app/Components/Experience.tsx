@@ -3,7 +3,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Experiencecard from '../libs/Experiencecard'
 import {client} from '../../../sanity/lib/client'
-import { Experience } from '../../../typings'
 
 export async function getExperience() { 
   const Exp = await client.fetch(`*[_type == 'experience']{
