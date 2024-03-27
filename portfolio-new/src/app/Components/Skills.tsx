@@ -23,7 +23,7 @@ export  async function Skills() {
     className='flex relative flex-col text-center md:text-left xl:flex-row max-w-full xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
 <h3 className='absolute top-20 tracking-[24px] text-gray-500 uppercase text-2xl animate-pulse'>skills</h3>
 <h3 className='absolute top-32 tracking-[3px] text-gray-500 uppercase text-sm hover:text-white'> Hover over a skill for currency profieciency</h3>
-<div className='grid grid-cols-4 gap-5  -mb-10 md:-mb-10 xl:-mb-15'>
+<div className='grid grid-cols-3 md:grid-cols-4 xl:grid-cols-4  gap-5  -mb-10 md:-mb-10 xl:-mb-15'>
   {getdata.map((skill:any) => (
     <Skill key={skill._id} skill={skill} />
   ))}

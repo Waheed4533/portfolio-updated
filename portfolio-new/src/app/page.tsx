@@ -34,7 +34,7 @@ import Link from "next/link";
       </section>
       
       <Link href={"#hero"}>
-<footer className="sticky bottom-3 w-full cursor-pointer">
+<footer className="sticky bottom-20 md:bottom-5 xl:bottom-3  w-full cursor-pointer">
  <div className="flex justify-center items-center ">
  <img  className="w-10 h-10 rounded-full filter hover:grayscale-0 grayscale"
  src="/FB_IMG_1677007946642 (1).jpg" alt="waheed" />
