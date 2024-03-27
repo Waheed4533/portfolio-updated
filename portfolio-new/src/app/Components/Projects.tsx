@@ -14,11 +14,9 @@ export async function getprojects() {
   }`)
     return z;
   }
-type projecttype = {
-  project: Project[]
-}
 
-export  async function Projects({project}: projecttype) {
+
+export  async function Projects() {
 const projects = await getprojects()
   return (
     <motion.div

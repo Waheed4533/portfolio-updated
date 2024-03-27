@@ -4,9 +4,7 @@ import { motion } from 'framer-motion'
 import Skill from '../libs/Skill'
 import { skill } from '../../../typings'
 import { client } from '../../../sanity/lib/client'
-type Props = {
-  skills : skill[]
-}
+
 export async function getskills() { 
   const skill = await client.fetch(`*[_type == 'skill']{
     ...,
@@ -15,7 +13,7 @@ export async function getskills() {
   }`);
     return skill;
   }
-export  async function Skills({skills}: Props) {
+export  async function Skills() {
   const getdata = await getskills()
   return (
     <motion.div 

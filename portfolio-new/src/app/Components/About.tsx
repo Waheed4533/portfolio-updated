@@ -14,11 +14,9 @@ async function pageinfo() {
     return z;
   }
 
-type abouttype = {
-  about:PageInfo
-}
 
-export  async function About({about}: abouttype) {
+
+export  async function About() {
   
   const get = await pageinfo();
       
